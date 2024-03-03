@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: blueviolet;
+}
+
+.form {
+    width: 800px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    margin: 100px auto;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: rgb(31, 31, 95);
+}
+
+.title::after {
+    content: url(./img.svg);
+    margin-left: 10px;
+}
+
+.inp {
+    width: 500px;
+    height: 45px;
+    padding: 5px 130px 5px 20px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    background-color: rgb(128, 128, 128, 0.1);
+    margin-left: 140px;
+}
+
+.btn {
+    text-transform: capitalize;
+    color: white;
+    width: 120px;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(255, 123, 0, 0.9);
+    transform: translateX(-100%);
+    margin-bottom: 25px;
+}
+
+.btn:hover {
+    background-color: rgb(255, 123, 0, 0.7);
+}
+
+.btn:active {
+    background-color: rgb(255, 123, 0, 0.5);
+    box-shadow: 0px 0px 5px rgb(255, 123, 0, 0.9);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.item {
+    padding: 8px 20px 8px 30px;
+    cursor: pointer;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    background-color: rgb(138, 43, 226, 0.4);
+}
+
+.delete-btn {
+    background-color: red;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.edit-btn {
+    background-color: blue;
+    border: none;
+    padding: 5px 17px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    backdrop-filter: blur(10px);
+    display: none;
+}
+
+.modal {
+    width: 50%;
+    height: 20%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.open-modal {
+    display: block;
+}
+
+.value-wrapper {
+    display: flex;
+    justify-content: left;
+}
+
+.uptade-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.uptade-wrapper input {
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    outline: none;
+}
+
+.uptade-wrapper button {
+    background-color: blueviolet;
+    padding: 7px 14px;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.delete-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.delete-wrapper div button {
+    padding: 7px 14px;
+    width: 150px;
+    margin-top: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 14px;
+}
+
+.delete-wrapper div button:first-child {
+    background-color: blue;
+}
+
+.comp-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.comp-wrapper button {
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(138, 43, 226, 0.4);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.check-wrapper {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.check-inner {
+    position: absolute;
+    inset: 1px;
+    background-color: blue;
+    border-radius: 50%;
+    display: none;
+}
+
+.check-open {
+    display: block;
+    position: absolute;
+    inset: 1px;
+    background-color: blue;
+    border-radius: 50%; 
+}

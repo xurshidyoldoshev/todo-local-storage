@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>todo</title>
+</head>
+
+<body>
+    <form class="form">
+        <h2 class="title">to-do list</h2>
+        <div class="block">
+            <input required placeholder="Add your task" class="inp" type="text">
+            <button type="submit" class="btn">add</button>
+        </div>
+        <div class="comp-wrapper">
+            <button class="all-count__btn" type="button">All <span class="all-count">0</span></button>
+            <button class="complated-count__btn" type="button">Complated <span class="complated-count">0</span></button>
+            <button class="uncomplated-count__btn" type="button">Uncomplated <span class="uncomplated-count">0</span></button>
+        </div>
+        <ul class="list"></ul>
+    </form>
+
+    <div id="modal-wrapper" class="modal-wrapper">
+        <div class="modal"></div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
